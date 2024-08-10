@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to MailBlast</h1>
+        </header>
+        <main>
+            <h2>Your One-Stop Solution for Bulk Email</h2>
+            <p>Submit your details and let us handle the rest.</p>
+            <a href="{% url 'submit_details' %}" class="btn">Submit Your Details</a>
+        </main>
+        <footer>
+            <p>&copy; 2024 MailBlast. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
